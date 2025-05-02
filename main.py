@@ -46,7 +46,16 @@ def main():
             el.draw(screen)
         for asteroid in asteroids:
             asteroid.check_collision(player)
-        shots.update(dt)
+
+        for asteroid in asteroids:
+            for bullet in shots:
+                if bullet.check_collision(asteroid):
+                    asteroid.kill()
+                    bullet.kill()
+             
+                
+
+        
 
 
         # call this last

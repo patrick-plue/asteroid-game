@@ -12,4 +12,3 @@ class Asteroid(CircleShape):
         self.position += (self.velocity * dt)
 
 
-
