@@ -2,6 +2,8 @@ import pygame
 import sys
 
 # Base class for game objects
+
+
 class CircleShape(pygame.sprite.Sprite):
     def __init__(self, x, y, radius):
         # we will be using this later
@@ -25,5 +27,4 @@ class CircleShape(pygame.sprite.Sprite):
     def check_collision(self, other_circle):
         distance = self.position.distance_to(other_circle.position)
         if distance < self.radius + other_circle.radius:
-            print("Game Over")
-            sys.exit(1)
+            return True

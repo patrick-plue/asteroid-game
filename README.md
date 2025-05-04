@@ -6,3 +6,9 @@ Asteroids is my second [Boot.dev](https://www.boot.dev) project!
 
 Create virtual environment `source venv/bin/activate`
 Start script with `python3 main.py`
+
+# Additional Features
+
+Features implemented after finishing the guided project:
+
+-   "Game Over" Screen
