@@ -15,3 +15,4 @@ Start script with `python3 main.py`
 Features implemented after finishing the guided project:
 
 -   "Game Over" Screen
+-   "Simple" Scoring System
