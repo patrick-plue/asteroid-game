@@ -59,15 +59,19 @@ def main():
                         bullet.kill()
                         score += 1
         elif game_state == "game_over":
-            screen.fill("black")
-            font = pygame.font.SysFont('arial', 40)
-            title = font.render('Game Over', True, (255, 255, 255))
-            screen.blit(title, (SCREEN_WIDTH/2 - title.get_width() /
-                        2, SCREEN_HEIGHT/2 - title.get_height()/3))
-            pygame.display.update()
+            game_over(screen)
 
         # call this last
         pygame.display.flip()
+
+
+def game_over(screen):
+    screen.fill("black")
+    font = pygame.font.SysFont('arial', 40)
+    title = font.render('Game Over', True, (255, 255, 255))
+    screen.blit(title, (SCREEN_WIDTH/2 - title.get_width() /
+                2, SCREEN_HEIGHT/2 - title.get_height()/3))
+    pygame.display.update()
 
 
 if __name__ == "__main__":
